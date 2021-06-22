@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>Offcanvas navbar template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/offcanvas-navbar/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #000b0e;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+.sticky-top {
+  align-self: flex-start;
+}
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<!-- <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Offcanvas navbar</a>
+    <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Notifications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Switch account</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Settings</a>
+          <ul class="dropdown-menu" aria-labelledby="dropdown01">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav> -->
+
+<!-- <div class="nav-scroller bg-body shadow-sm">
+  <nav class="nav nav-underline" aria-label="Secondary navigation">
+    <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+    <a class="nav-link" href="#">
+      Friends
+      <span class="badge bg-light text-dark rounded-pill align-text-bottom">27</span>
+    </a>
+    <a class="nav-link" href="#">Explore</a>
+    <a class="nav-link" href="#">Suggestions</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Link</a>
+  </nav>
+</div> -->
+
+<main class="container">
+  <div class="d-flex align-items-center p-3 my-3 text-white bg-purple rounded shadow-sm">
+    <!-- <img class="me-3" src="../assets/brand/bootstrap-logo-white.svg" alt="" width="48" height="38"> -->
+    <div class="lh-1">
+      <h1 class="h6 mb-0 text-white lh-1">Curriculum Vitae</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-3 col-md-12">
+      <div class="my-3 p-3 bg-body rounded shadow-sm">
+        <h6 class="border-bottom pb-2 mb-0 mb-2 text-center">CV</h6>
+          <img src="img/2020-03-18.jpg" class="rounded-circle mx-auto d-block img-thumbnail" alt="...">
+        <div class="d-flex text-muted pt-3 ">
+          <p class="pb-3 mb-0 small lh-sm border-bottom text-center">
+            <strong class="d-block text-gray-dark">Ronny Hermansyah</strong><br>
+            Seorang Junior Web Developer yang selalu haus akan ilmu - ilmu baru yang selalu muncul disetiap detiknya.
+          </p>
+        </div>
+        <div class="d-flex text-muted pt-3">
+          <p class="pb-3 mb-0 small lh-sm border-bottom">
+            <table>
+              <tr>
+                <td><img src="https://www.kindpng.com/picc/m/492-4920983_location-marker-location-logo-black-png-transparent-png.png" alt="" width="15px"></td>
+                <td><small>Jl. Gunung Belah Gg. Beringin 2 RT. 35</small></td>
+              </tr>
+              <tr>
+                <td><img src="https://www.nicepng.com/png/full/90-903560_e-mail-png-pic-email-logo-icon-png.png" alt="" width="15px"></td>
+                <td><small>ronnydrayer@gmail.com</small></td>
+              </tr>
+              <tr>
+                <td><img src="https://i.pinimg.com/originals/ab/8e/8d/ab8e8d3f8aab71818795ce2db4891c64.png" alt="" width="15px"></td>
+                <td><small>081247356120</small></td>
+              </tr>
+              <tr>
+                <td><img src="https://www.freepnglogos.com/uploads/logo-website-png/logo-website-world-wide-web-svg-png-icon-download-10.png" alt="" width="15px"></td>
+                <td><small>github.com/HMsyha23</small></td>
+              </tr>
+            </table>
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="my-3 p-3 bg-body rounded shadow-sm">
+          <h6 class="border-bottom pb-2 mb-0"> <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Skill_development_images.png" alt="" width="15px">
+             Kemampuan</h6>
+          <div class="d-flex text-muted pt-3">
+            <table class="table table-responsive">
+              <tr>
+                <th style="width: 10%" >
+                  <img src="data:image/png;base64,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" alt="" width="32px">
+                </th>
+                <th style="width: 90%">
+                  <div class="progress mt-2">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">80%</div>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th style="width: 10%" >
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Microsoft_Office_logo_%282013%E2%80%932019%29.png" alt="" width="32px">
+                </th>
+                <th style="width: 90%">
+                  <div class="progress mt-2">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th style="width: 10%" >
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="" width="32px">
+                </th>
+                <th style="width: 90%">
+                  <div class="progress mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th style="width: 10%" >
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" alt="" width="32px">
+                </th>
+                <th style="width: 90%">
+                  <div class="progress mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th style="width: 10%" >
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="" width="32px">
+                </th>
+                <th style="width: 90%">
+                  <div class="progress mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th style="width: 10%" >
+                  <img src="http://2.bp.blogspot.com/-fy31E5KW-wQ/UBo2VJfhueI/AAAAAAAABwM/f56Etn3ZWa0/s1600/VBNET.jpeg" alt="" width="32px">
+                </th>
+                <th style="width: 90%">
+                  <div class="progress mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th style="width: 10%" >
+                  <img src="https://1000logos.net/wp-content/uploads/2020/08/MySQL-Logo.png" alt="" width="32px">
+                </th>
+                <th style="width: 90%">
+                  <div class="progress mt-2">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+                  </div>
+                </th>
+              </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="my-3 p-3 bg-body rounded shadow-sm">
+            <h6 class="border-bottom pb-2 mb-0"> <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Education%2C_Studying%2C_University%2C_Alumni_-_icon.png" alt="" width="32px"> Pendidikan</h6>
+            <div class="d-flex text-muted pt-3">
+              <ul class="timeline">
+                <li>
+                  <strong class="text-dark">2002 - 2003</strong>
+                  <p>
+                    <strong>TK Mawar Tenggarong</strong>
+                  </p>
+                </li>
+                <li>
+                  <strong class="text-dark">2003 - 2009</strong>
+                  <p>
+                    <strong>SD Negeri 021 Tenggarong</strong>
+                  </p>
+                </li>
+                <li>
+                  <strong class="text-dark">2009 - 2012</strong>
+                  <p>
+                    <strong>SMP Negeri 03 Tenggarong</strong>
+                  </p>
+                </li>
+                <li>
+                  <strong class="text-dark">2012 - 2015</strong>
+                  <p>
+                    <strong>SMK Negeri 1 Tenggarong</strong> <br>
+                      <small>Jurusan : Teknik Komputer Jaringan</small>
+                  </p>
+                </li>
+                <li>
+                  <strong class="text-dark">2015 - 2021</strong>
+                  <p>
+                    <strong>STMIK Widya Cipta Dharma</strong> <br>
+                      <small>Program Studi : SIstem Informasi</small>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="my-3 p-3 bg-body rounded shadow-sm">
+            <h6 class="border-bottom pb-2 mb-0"> <img src="https://www.pngkey.com/png/full/126-1261137_working-with-laptop-vector-people-work-icon.png" alt="" width="32px"> Pengalaman Bekerja</h6>
+            <div class="d-flex text-muted pt-3">
+              <ul class="timeline">
+                <li>
+                  <strong class="text-dark">10 Maret - 5 Juni 2104</strong>
+                  <p>
+                    <strong>Praktik Kerja Industri</strong> <br>
+                      <small>PT. TELKOM Tenggarong</small>
+                  </p>
+                </li>
+                <li>
+                  <strong class="text-dark">2017 - 2021</strong>
+                  <p>
+                    <strong>Asisten Lab</strong> <br>
+                      <small>STMIK Widya Cipta Dharma</small>
+                  </p>
+                </li>
+                <li>
+                  <strong class="text-dark">2017 - 2021</strong>
+                  <p>
+                    <strong>Junior Web Developer</strong> <br>
+                      <small>CV. Solusi Teknologi Mandiri</small>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="my-3 p-3 bg-body rounded shadow-sm">
+            <h6 class="border-bottom pb-2 mb-0"> <img src="https://img.pngio.com/a-project-logo-vector-png-transparent-a-project-logo-vectorpng-project-png-512_512.png" alt="" width="32px">
+               Daftar Penghargaan</h6>
+            <div class="d-flex text-muted pt-3">
+              <ul class="timeline">
+                <li>
+                  <strong class="text-dark">Agustus 8, 2020</strong>
+                  <p>
+                    <strong>Gold Medal</strong> <a href="sertifikat/Aruba Gold Medal.pdf" target="_blank"> <i class="fas fa-file-pdf"></i></a>  <br>
+                    <small>Pada Arubalympics 2020</small>
+                  </p>
+                </li>
+                <li>
+                  <strong class="text-dark">2020</strong>
+                  <p>
+                    <strong>Juara 1 Lomba Karsa Cipta</strong> <a href="sertifikat/Piagam Lomba PKM Karsa Cipta.pdf" target="_blank"> <i class="fas fa-file-pdf"></i></a> <br>
+                    <small>dengan Tema "Smart-City" Pada STMIK Widya Cipta Dharma</small>
+                  </p>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+
+        <div class="col-lg-6">
+          <div class="my-3 p-3 bg-body rounded shadow-sm">
+            <h6 class="border-bottom pb-2 mb-0"> <img src="https://img.pngio.com/a-project-logo-vector-png-transparent-a-project-logo-vectorpng-project-png-512_512.png" alt="" width="32px">
+               Sertifikat Kompetensi</h6>
+            <div class="d-flex text-muted pt-3">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <img src="https://d17ivq9b7rppb3.cloudfront.net/original/commons/dicoding-logo-full.png" class="img-fluid" alt="">
+                      <div target="_blank" class="list-group">
+                        <a href="https://www.dicoding.com/certificates/1RXY4094KPVM" target="_blank" class="list-group-item list-group-item-action">
+                          <img src="https://www.pngkey.com/png/detail/211-2110967_certificate-with-medal-svg-png-icon-free-download.png" alt="" width="12px">
+                          Belajar Membuat Aplikasi Android untuk Pemula
+                        </a>
+                        <a href="https://www.dicoding.com/certificates/JLX11W63GX72" target="_blank" class="list-group-item list-group-item-action">
+                          <img src="https://www.pngkey.com/png/detail/211-2110967_certificate-with-medal-svg-png-icon-free-download.png" alt="" width="12px">
+                          Belajar Membuat Aplikasi Kognitif
+                        </a><a href="https://www.dicoding.com/certificates/6RPNK42K5P2M" target="_blank" class="list-group-item list-group-item-action">
+                          <img src="https://www.pngkey.com/png/detail/211-2110967_certificate-with-medal-svg-png-icon-free-download.png" alt="" width="12px">
+                          Membangun Progressive Web Apps
+                        </a><a href="https://www.dicoding.com/certificates/6RPNK4QW5P2M" target="_blank" class="list-group-item list-group-item-action">
+                          <img src="https://www.pngkey.com/png/detail/211-2110967_certificate-with-medal-svg-png-icon-free-download.png" alt="" width="12px">
+                          Memulai Pemrograman Dengan Python
+                        </a><a href="https://www.dicoding.com/certificates/72ZD2717QZYW" target="_blank" class="list-group-item list-group-item-action">
+                          <img src="https://www.pngkey.com/png/detail/211-2110967_certificate-with-medal-svg-png-icon-free-download.png" alt="" width="12px">
+                          Belajar Dasar Pemrograman Web
+                        </a><a href="https://www.dicoding.com/certificates/ERZR5KRGOPYV" target="_blank" class="list-group-item list-group-item-action">
+                          <img src="https://www.pngkey.com/png/detail/211-2110967_certificate-with-medal-svg-png-icon-free-download.png" alt="" width="12px">
+                          Belajar Dasar-Dasar Azure Cloud
+                        </a><a href="https://www.dicoding.com/certificates/98XW64224XM3" target="_blank" class="list-group-item list-group-item-action">
+                          <img src="https://www.pngkey.com/png/detail/211-2110967_certificate-with-medal-svg-png-icon-free-download.png" alt="" width="12px">
+                          Belajar Dasar Visualisasi Data
+                        </a><a href="https://www.dicoding.com/certificates/1OP8D13DQPQK" target="_blank" class="list-group-item list-group-item-action">
+                          <img src="https://www.pngkey.com/png/detail/211-2110967_certificate-with-medal-svg-png-icon-free-download.png" alt="" width="12px">
+                          Belajar Machine Learning untuk Pemula
+                        </a><a href="https://www.dicoding.com/certificates/1OP8D13DQPQK" target="_blank" class="list-group-item list-group-item-action">
+                          <img src="https://www.pngkey.com/png/detail/211-2110967_certificate-with-medal-svg-png-icon-free-download.png" alt="" width="12px">
+                          Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)
+                        </a></a><a href="https://www.dicoding.com/certificates/2VX3ND2Y4XYQ" target="_blank" class="list-group-item list-group-item-action">
+                          <img src="https://www.pngkey.com/png/detail/211-2110967_certificate-with-medal-svg-png-icon-free-download.png" alt="" width="12px">
+                          Belajar Membuat Aplikasi Back-End untuk Pemula
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-lg-12">
+          <div class="my-3 p-3 bg-body rounded shadow-sm">
+            <h6 class="border-bottom pb-2 mb-0"> <img src="https://img.pngio.com/a-project-logo-vector-png-transparent-a-project-logo-vectorpng-project-png-512_512.png" alt="" width="32px">
+               Daftar Project</h6>
+            <div class="d-flex text-muted pt-3">
+              <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col-lg-6">
+                  <div class="card">
+                    <img src="img/upm.jpg" alt="..." class="card-img-top">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Unit Penjamin Mutu</h5>
+                      <a href="https://upm.wicida.ac.id"><strong>upm.wicida.ac.id</strong></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card">
+                    <img src="img/rasi.JPG" class="card-img-top">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Yayasan Konservasi RASI</h5>
+                      <a href="https://ykrasi.org"><strong>www.ykrasi.org</strong></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</main>
+
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="offcanvas.js"></script>
+  </body>
+</html>
